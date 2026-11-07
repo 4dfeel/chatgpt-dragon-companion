@@ -21,7 +21,7 @@
 
 ## 源码与构建
 
-- `companion/`：桌面宠物源码、原始说明与素材。需要 Node.js 24+；在此目录运行 `npm ci`，再运行 `npm run check`、`npm test`；构建使用 `npm run package:win`。详见该目录原始 README。
+- `companion/`：桌面宠物源码、原始说明与素材。需要 Node.js 24+；在此目录运行 `npm ci`，先运行 `node scripts/fetch-reference-audio.mjs` 准备经过哈希校验的测试音效，再运行 `npm run check`、`npm test`；构建使用 `npm run package:win`。详见该目录原始 README。
 - `launcher/community-v34/`：启动动画与壁纸源码。Windows PowerShell 5.1 下运行 `Build.ps1 -MediaRoot <完整发行包中的launcher目录> -OutputDirectory <新的输出目录>`。构建会验证媒体清单。
 - `Start-Dragon.cmd`：便携发行包的统一入口；源码下载不含所需可执行程序，请使用 Releases。
 
