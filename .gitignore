@@ -1,0 +1,15 @@
+.env
+.env.*
+node_modules/
+output/
+dist/
+.artifacts/
+native/bin/
+*.log
+*.sqlite*
+*.dmp
+*.zip
+auth.json
+wallpaper-host-config.json
+wallpaper-host-session.json
+install-state.json
